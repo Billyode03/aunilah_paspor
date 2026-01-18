@@ -18,11 +18,11 @@ class SplashScreen extends StatelessWidget {
       childWidget: SizedBox(
         height: 200,
         width: 200,
-        child: Image.asset(
-          ImageConstant.logoAwal,
-          height: 120,
-          width: 120,
-        ),
+        // child: Image.asset(
+        //   ImageConstant.logoAwal,
+        //   height: 120,
+        //   width: 120,
+        // ),
       ),
       duration: const Duration(milliseconds: 3000),
       onAnimationEnd: () => debugPrint("On Fade In End"),
