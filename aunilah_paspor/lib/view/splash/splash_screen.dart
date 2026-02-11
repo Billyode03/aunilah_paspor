@@ -1,4 +1,5 @@
 import 'package:another_flutter_splash_screen/another_flutter_splash_screen.dart';
+import 'package:aunilah_paspor/utils/constants/image_constant.dart';
 import 'package:aunilah_paspor/view/dashboard/dashboard.dart';
 import 'package:flutter/material.dart';
 
@@ -18,11 +19,11 @@ class SplashScreen extends StatelessWidget {
       childWidget: SizedBox(
         height: 200,
         width: 200,
-        // child: Image.asset(
-        //   ImageConstant.logoAwal,
-        //   height: 120,
-        //   width: 120,
-        // ),
+        child: Image.asset(
+          ImageConstant.mainLogo2,
+          height: 120,
+          width: 120,
+        ),
       ),
       duration: const Duration(milliseconds: 3000),
       onAnimationEnd: () => debugPrint("On Fade In End"),
