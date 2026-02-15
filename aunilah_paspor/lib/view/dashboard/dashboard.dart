@@ -8,7 +8,7 @@ class DashboardScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.p))
+          // IconButton(onPressed: (){}, icon: Icon(Icons.p))
         ],
       ),
       body: SingleChildScrollView(
