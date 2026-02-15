@@ -6,10 +6,18 @@ class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        actions: [
+          IconButton(onPressed: (){}, icon: Icon(Icons.p))
+        ],
+      ),
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SizedBox(
+              height: 50,
+            ),
             Center(
               child: Text(
                 "Dashboard Screen",

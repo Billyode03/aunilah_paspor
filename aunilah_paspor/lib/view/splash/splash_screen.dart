@@ -17,10 +17,10 @@ class SplashScreen extends StatelessWidget {
         debugPrint("On End");
       },
       childWidget: SizedBox(
-        height: 200,
-        width: 200,
+        height: 300,
+        width: 300,
         child: Image.asset(
-          ImageConstant.mainLogo2,
+          ImageConstant.mainLogo,
           height: 120,
           width: 120,
         ),
