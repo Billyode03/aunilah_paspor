@@ -1,4 +1,5 @@
 import 'package:aunilah_paspor/utils/constants/icon_constant.dart';
+import 'package:aunilah_paspor/utils/constants/text_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -16,7 +17,6 @@ class DashboardScreen extends StatelessWidget {
           icon: SvgPicture.asset(
             IconConstant.hamburger,
           ),
-          
         ),
       ),
       body: SingleChildScrollView(
@@ -27,10 +27,10 @@ class DashboardScreen extends StatelessWidget {
               height: 50,
             ),
             Center(
-              child: Text(
-                "Halo, Selamat Datang di",
-              ),
-            ),
+                child: Text(
+              "Halo, Selamat Datang di",
+              style: TextConstant.poppinRegular,
+            )),
             Image.asset(
               IconConstant.location_,
               height: 100,
