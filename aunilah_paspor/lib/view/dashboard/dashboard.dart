@@ -1,5 +1,6 @@
 import 'package:aunilah_paspor/utils/constants/icon_constant.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -8,10 +9,15 @@ class DashboardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [
-          // IconButton(onPressed: (){}, icon: IconConstant.call)
-          // IconConstant.hamburger
-        ],
+        elevation: 0,
+        backgroundColor: Colors.white,
+        leading: IconButton(
+          onPressed: () {},
+          icon: SvgPicture.asset(
+            IconConstant.hamburger,
+          ),
+          
+        ),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -22,9 +28,14 @@ class DashboardScreen extends StatelessWidget {
             ),
             Center(
               child: Text(
-                "Dashboard Screen bro",
+                "Halo, Selamat Datang di",
               ),
             ),
+            Image.asset(
+              IconConstant.location_,
+              height: 100,
+              width: 100,
+            )
           ],
         ),
       ),
