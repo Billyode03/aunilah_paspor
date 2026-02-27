@@ -21,15 +21,51 @@ class DashboardScreen extends StatelessWidget {
           ),
         ),
       ),
-      body: const SingleChildScrollView(
-        padding: EdgeInsets.symmetric(horizontal: 20),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(
-              height: 50,
+            const SizedBox(
+              height: 30,
             ),
-            SingleChildScrollView(
+            // Text(
+            //   'Halo, Selamat Datang di....',
+            //   style: TextConstant.poppinRegularBig,
+            // ),
+            const SizedBox(
+              height: 20,
+            ),
+            ClipRRect(
+              borderRadius: BorderRadiusGeometry.circular(20),
+              child: Image.asset(
+                ImageConstant.car1,
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 50),
+              child: Text(
+                'Jasa Pengurusan Paspor Cepat & Aman',
+                style: TextConstant.poppinBold,
+                maxLines: 2,
+                softWrap: true,
+                textAlign: TextAlign.center,
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Text(
+              'Offline & Online ● Pendampingan Sampai Jadi ',
+              style: TextConstant.poppinRegular,
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            const SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
@@ -43,22 +79,33 @@ class DashboardScreen extends StatelessWidget {
                     width: 10,
                   ),
                   CardKeunggulanWidget(
-                    svg: IconConstant.hamburger,
+                    svg: IconConstant.checkGreen,
                     text: 'Di Dampingi',
-                    text2: 'Pengurusan paspor lebih cepat',
+                    text2: 'Pengurusan mendapatkan bimbingan',
                     image: ImageConstant.ung2,
                   ),
                   SizedBox(
                     width: 10,
                   ),
                   CardKeunggulanWidget(
-                    svg: IconConstant.hamburger,
+                    svg: IconConstant.checkBlue,
                     text: 'Legal & Resmi',
                     text2: 'Pengurusan paspor aman dan terdata',
                     image: ImageConstant.ung3,
                   ),
                 ],
               ),
+            ),
+
+            const SizedBox(
+              height: 20,
+            ),
+            Text(
+              'Layanan / Paket Jasa',
+              style: TextConstant.poppinBold,
+            ),
+            const SizedBox(
+              height: 20,
             ),
           ],
         ),

@@ -11,10 +11,11 @@ class IconConstant {
   static const String locationPurple = 'assets/icon/location_purple.svg';
   static const String relations = 'assets/icon/relations.svg';
   static const String services = 'assets/icon/relations.svg';
-  static const String testimoni = 'assets/icon/testimoni.svg'; 
+  static const String testimoni = 'assets/icon/testimoni.svg';
   static const String waWhite = 'assets/icon/wa_white.svg';
-  static const String thunder = 'assets/icon/thunder.svg';       
-  static const String checkBlue = 'assets/icon/checkblue.svg';       
+  static const String thunder = 'assets/icon/thunder.svg';
+  static const String checkBlue = 'assets/icon/checkBlue.svg';
+  static const String checkGreen = 'assets/icon/checkGreen.svg';
 
   static const String location_ = 'assets/icon/location.png';
 }

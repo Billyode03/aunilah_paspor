@@ -28,7 +28,7 @@ class CardKeunggulanWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 190,
+      width: 117,
       height: 250,
       padding: const EdgeInsets.all(5),
       decoration: BoxDecoration(
@@ -50,12 +50,12 @@ class CardKeunggulanWidget extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SvgPicture.asset(
+              Image.asset(
                 svg,
-                height: 15,
+                height: 17,
               ),
               SizedBox(
-                width: 10, 
+                width: 10,
               ),
               Text(
                 text,

@@ -13,13 +13,18 @@ class TextConstant {
   );
 
   static final TextStyle poppinMedium = basePoppins.copyWith(
-    fontSize: 14,
-    fontWeight: FontWeight.w300,
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
   );
 
   static final TextStyle poppinBold = basePoppins.copyWith(
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: FontWeight.w700,
+  );
+
+  static final TextStyle poppinRegularBig = basePoppins.copyWith(
+    fontSize: 16,
+    fontWeight: FontWeight.w300,
   );
 
   static final TextStyle poppinItalic = basePoppins.copyWith(
