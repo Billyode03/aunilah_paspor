@@ -26,8 +26,4 @@ class TextConstant {
     fontSize: 22,
     fontStyle: FontStyle.italic,
   );
-  // static final TextStyle poppinRegular = basePoppins.copyWith(
-  //   fontSize: 22,
-  //   fontWeight: FontWeight.w600,
-  // )
 }

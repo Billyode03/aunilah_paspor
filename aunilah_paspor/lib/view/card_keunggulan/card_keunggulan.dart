@@ -29,7 +29,7 @@ class CardKeunggulanWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 190,
-      height: 290,
+      height: 250,
       padding: const EdgeInsets.all(5),
       decoration: BoxDecoration(
           color: const Color.fromARGB(27, 132, 26, 130),
@@ -41,12 +41,6 @@ class CardKeunggulanWidget extends StatelessWidget {
           )),
       child: Column(
         children: [
-          //TODO SVG IMAGE
-          // SvgPicture.asset(
-          //   svg,
-          //   height: 150,
-          //   fit: BoxFit.contain,
-          // ),
           Image.asset(
             image,
             height: 150,
@@ -56,13 +50,17 @@ class CardKeunggulanWidget extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SvgPicture(svg),
+              SvgPicture.asset(
+                svg,
+                height: 15,
+              ),
+              SizedBox(
+                width: 10, 
+              ),
               Text(
                 text,
                 textAlign: TextAlign.center,
                 style: TextConstant.poppinBold,
-                // softWrap: true,
-                // maxLines: 2,
                 overflow: TextOverflow.visible,
               ),
             ],

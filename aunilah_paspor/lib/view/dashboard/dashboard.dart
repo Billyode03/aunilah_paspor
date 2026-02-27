@@ -21,7 +21,7 @@ class DashboardScreen extends StatelessWidget {
           ),
         ),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         padding: EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -34,6 +34,7 @@ class DashboardScreen extends StatelessWidget {
               child: Row(
                 children: [
                   CardKeunggulanWidget(
+                    svg: IconConstant.thunder,
                     text: 'Proses Cepat',
                     text2: 'Pengurusan paspor lebih cepat',
                     image: ImageConstant.ung1,
@@ -42,6 +43,7 @@ class DashboardScreen extends StatelessWidget {
                     width: 10,
                   ),
                   CardKeunggulanWidget(
+                    svg: IconConstant.hamburger,
                     text: 'Di Dampingi',
                     text2: 'Pengurusan paspor lebih cepat',
                     image: ImageConstant.ung2,
@@ -50,6 +52,7 @@ class DashboardScreen extends StatelessWidget {
                     width: 10,
                   ),
                   CardKeunggulanWidget(
+                    svg: IconConstant.hamburger,
                     text: 'Legal & Resmi',
                     text2: 'Pengurusan paspor aman dan terdata',
                     image: ImageConstant.ung3,
