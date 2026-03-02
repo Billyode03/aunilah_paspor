@@ -4,22 +4,18 @@ import 'package:aunilah_paspor/utils/constants/text_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class CardKeunggulanWidget extends StatelessWidget {
+class CardLayanan extends StatelessWidget {
   final String text;
-  final String text2;
-  final String image;
-  final String svg;
+  final Widget? image;
 
   final Color? textColor;
   final Widget? icon;
   final double? spacing;
 
-  const CardKeunggulanWidget({
+  const CardLayanan({
     super.key,
     required this.text,
-    required this.text2,
     required this.image,
-    required this.svg,
     this.textColor,
     this.icon,
     this.spacing,
@@ -28,8 +24,8 @@ class CardKeunggulanWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 117,
-      height: 250,
+      width: 108,
+      height: 110,
       padding: const EdgeInsets.all(5),
       decoration: BoxDecoration(
           color: const Color.fromARGB(27, 132, 26, 130),
@@ -41,34 +37,19 @@ class CardKeunggulanWidget extends StatelessWidget {
           )),
       child: Column(
         children: [
-          Image.asset(
-            image,
-            height: 150,
-            fit: BoxFit.contain,
+          SizedBox(
+            height: 5,
           ),
-          //TODO Text,
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset(
-                svg,
-                height: 17,
-              ),
-              SizedBox(
-                width: 10,
-              ),
-              Text(
-                text,
-                textAlign: TextAlign.center,
-                style: TextConstant.poppinBold,
-                overflow: TextOverflow.visible,
-              ),
-            ],
-          ),
+          if (image != null)
+            SizedBox(
+              height: 90,
+              child: Center(child: image),
+            ),
+          const SizedBox(height: 8),
           Text(
-            text2,
+            text,
             textAlign: TextAlign.center,
-            style: TextConstant.poppinMedium,
+            style: TextConstant.poppinBold2,
             softWrap: true,
             maxLines: 4,
             overflow: TextOverflow.visible,

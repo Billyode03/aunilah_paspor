@@ -17,5 +17,9 @@ class IconConstant {
   static const String checkBlue = 'assets/icon/checkBlue.svg';
   static const String checkGreen = 'assets/icon/checkGreen.svg';
 
+  static const String logoMain = 'assets/icon/logo_main.svg';
+  static const String logoMainWhite = 'assets/icon/logo_main_white.svg';
+
   static const String location_ = 'assets/icon/location.png';
+  static const String logoWhite = 'assets/icon/logoWhite.png';
 }

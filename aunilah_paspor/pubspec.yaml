@@ -40,7 +40,9 @@ dependencies:
   flutter_slider_drawer: ^3.0.2
   loading_indicator: ^3.1.1
   url_launcher: ^6.1.14
-  flutter_svg: ^2.0.10
+  flutter_svg: ^2.2.3
+  flutter_expandable_fab: ^2.5.0
+ 
 
 dev_dependencies:
   flutter_test:

@@ -14,4 +14,31 @@ class ImageConstant {
   static const String unggul1 = 'assets/image/prosesCepat.svg';
   static const String unggul2 = 'assets/image/diDampingi.svg';
   static const String unggul3 = 'assets/image/legalResmi.svg';
+
+  static const String grid1 = 'assets/image/grid1.svg';
+  static const String grid2 = 'assets/image/grid2.svg';
+  static const String grid3 = 'assets/image/grid3.svg';
+  static const String grid4 = 'assets/image/grid4.svg';
+
+  static const String alur = 'assets/image/alurProses.svg';
+  static const String hubKami = 'assets/image/hubKami.svg';
+  static const String alamat = 'assets/image/alamat.svg';
+
+  static const String alurPro = 'assets/image/alurPro.svg';
+
+  static const String gridSa = 'assets/image/gr1.png';
+  static const String griDu = 'assets/image/gr2.png';
+  static const String griTu = 'assets/image/gr3.png';
+  static const String griEm = 'assets/image/gr4.png';
+  static const String alurP = 'assets/image/alurProses.png';
+  static const String alurPros = 'assets/image/alurPro.png';
+  static const String hubKam = 'assets/image/hubKami.png';
+  static const String alama = 'assets/image/alamat.png';
+
+  static const String cardBukti = 'assets/image/cardBukti1.png';
+  static const String cardBukti2 = 'assets/image/cardBukti2.png';
+  static const String cardBukti3 = 'assets/image/cardBukti3.png';
+  static const String cardBukti4 = 'assets/image/cardBukti4.png';
+
+  static const String aunilahBanner = 'assets/image/aunilah_paspor.png';
 }

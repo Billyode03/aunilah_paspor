@@ -7,25 +7,43 @@ class TextConstant {
     color: ColorConstant.purple,
   );
 
-  static final TextStyle poppinRegular = basePoppins.copyWith(
+  static final TextStyle poppinRegular1 = basePoppins.copyWith(
+    fontSize: 14,
+    fontWeight: FontWeight.w300,
+  );
+
+  static final TextStyle poppinRegular2 = basePoppins.copyWith(
     fontSize: 12,
     fontWeight: FontWeight.w300,
   );
 
-  static final TextStyle poppinMedium = basePoppins.copyWith(
+  static final TextStyle poppinRegular3 = basePoppins.copyWith(
+    fontSize: 10,
+    fontWeight: FontWeight.w300,
+  );
+
+  static final TextStyle poppinMedium1 = basePoppins.copyWith(
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+  );
+
+  static final TextStyle poppinMedium2 = basePoppins.copyWith(
     fontSize: 12,
     fontWeight: FontWeight.w400,
   );
 
-  static final TextStyle poppinBold = basePoppins.copyWith(
-    fontSize: 14,
+  static final TextStyle poppinBold1 = basePoppins.copyWith(
+    fontSize: 15,
     fontWeight: FontWeight.w700,
   );
 
-  static final TextStyle poppinRegularBig = basePoppins.copyWith(
-    fontSize: 16,
-    fontWeight: FontWeight.w300,
+  static final TextStyle poppinBold2 = basePoppins.copyWith(
+    fontSize: 12,
+    fontWeight: FontWeight.w700,
   );
+
+  static final TextStyle poppinBold3 =
+      basePoppins.copyWith(fontSize: 12, fontWeight: FontWeight.bold);
 
   static final TextStyle poppinItalic = basePoppins.copyWith(
     fontSize: 22,
