@@ -44,15 +44,17 @@ class _DashboardScreenState extends State<DashboardScreen> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.white,
-        leading: IconButton(
-          onPressed: () {},
-          icon: SvgPicture.asset(
-            IconConstant.hamburger,
+        title: Center(
+          child: Image.asset(
+            ImageConstant.aunilahBanner,
+            height: 40,
           ),
         ),
       ),
-      body: SizedBox.expand(
-        child: _buildContent(),
+      body: SafeArea(
+        child: SizedBox.expand(
+          child: _buildContent(),
+        ),
       ),
       floatingActionButtonLocation: ExpandableFab.location,
       floatingActionButton: _buildFab(),
@@ -227,6 +229,13 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 SizedBox(
                   height: 10,
                 ),
+                Text(
+                  'Alur Proses',
+                  style: TextConstant.poppinBold2,
+                ),
+                SizedBox(
+                  height: 10,
+                ),
                 Image.asset(
                   height: 110,
                   width: 400,
@@ -347,6 +356,31 @@ class _DashboardScreenState extends State<DashboardScreen> {
           SizedBox(
             height: 20,
           ),
+          const SizedBox(height: 30),
+
+          Divider(),
+
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.symmetric(vertical: 20),
+            decoration: BoxDecoration(
+                // color: ColorConstant.purple.withOpacity(0.05),
+                ),
+            child: Column(
+              children: [
+                Text(
+                  '© ${DateTime.now().year} Aunillah Paspor',
+                  style: TextStyle(fontSize: 12, color: Colors.grey),
+                ),
+                const SizedBox(height: 4),
+                GestureDetector(
+                  onTap: () => launchUrl(Uri.parse("https://nadhestudio.id")),
+                  child: Text("Created by NadheStudio"),
+                )
+              ],
+            ),
+          ),
+          const SizedBox(height: 10),
         ],
       ),
     );
